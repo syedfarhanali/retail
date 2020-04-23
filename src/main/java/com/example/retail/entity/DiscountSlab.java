@@ -10,6 +10,7 @@ import java.math.BigDecimal;
 @Entity
 public class DiscountSlab {
 
+
     @Id
     @GeneratedValue
     private int id;
@@ -60,6 +61,9 @@ public class DiscountSlab {
         return discount;
     }
 
+    public DiscountSlab() {
+    }
+    
     public DiscountSlab(CustomerType customerType, BigDecimal startRange, BigDecimal endRange, BigDecimal discount) {
         this.customerType = customerType;
         this.startRange = startRange;
